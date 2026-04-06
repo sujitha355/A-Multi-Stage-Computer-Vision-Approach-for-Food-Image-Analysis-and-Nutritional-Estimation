@@ -62,6 +62,36 @@ The pipeline processes an input image through the following stages:
 
 ---
 
+## Model Weights
+
+Due to GitHub file size limitations, pretrained and trained model weights are not included in this repository. Please download them manually using the links below.
+
+### 1. Food Classifier Model (Trained)
+
+Download from Google Drive:  
+https://drive.google.com/file/d/10buFoy8N9NUg6EdqWZ34p-f0mTFIBPFx/view?usp=drive_link
+
+After downloading, place the file in:
+models/food_classifier_best_40_class_v2.pth
+
+---
+
+### 2. Segment Anything Model (SAM)
+
+Download from the official repository:  
+https://github.com/facebookresearch/segment-anything
+
+Specifically download the ViT-B checkpoint and place it in:
+models/sam_vit_b_01ec64.pth
+
+---
+
+### Important
+
+Ensure all model files are placed correctly inside the `models/` directory before running the pipeline. The application will not work without these weights.
+
+---
+
 ## Usage
 
 ### 1. Run Food Recognition
